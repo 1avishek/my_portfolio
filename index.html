@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        const theme = localStorage.getItem('avishek-portfolio-theme')
+        document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'light'
+      } catch {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+    <meta
+      name="description"
+      content="Avishek Kuri Ananda portfolio: final-year AI student, practical AI builder, and medical AI project developer."
+    />
+    <meta name="theme-color" content="#f8f4ea" />
+    <title>AVISHEK KURI ANANDA | AI-Focused Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
