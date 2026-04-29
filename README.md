@@ -52,7 +52,13 @@ After pushing to GitHub:
 3. Set source to `GitHub Actions`.
 4. Run or wait for the deploy workflow.
 
-For the repository `my_portfolio`, the GitHub Pages URL will usually be:
+The custom portfolio domain is:
+
+```txt
+https://avishekananda.is-a.dev/
+```
+
+Until the custom domain DNS is active, the GitHub Pages URL will usually be:
 
 ```txt
 https://1avishek.github.io/my_portfolio/
