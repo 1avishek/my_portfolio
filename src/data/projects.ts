@@ -2,51 +2,84 @@ export type Project = {
   title: string
   category: string
   description: string
-  tech: string[]
-  githubUrl: string
-  liveDemoUrl?: string
-  accent: 'cyan' | 'violet' | 'emerald' | 'amber'
+  supportingLine?: string
+  status?: string
+  technologies: string[]
+  github?: string
+  live?: string
+  caseStudy?: {
+    challenge: string
+    built: string[]
+    outcome: string
+  }
 }
 
 export const projects: Project[] = [
   {
+    title: 'Finnish Short-Utterance Data Collection and Recognition Pipeline',
+    category: 'Speech AI / Audio Classification / Applied Research',
+    supportingLine:
+      'Completed as my Bachelor’s thesis in Artificial Intelligence at Satakunta University of Applied Sciences (SAMK).',
+    description:
+      'A speech-AI pipeline for collecting, validating, exporting, loading, and evaluating very short Finnish spoken responses.',
+    status: 'Bachelor’s thesis · Case study · No public demo',
+    technologies: [
+      'Python',
+      'Speech Processing',
+      'Audio Classification',
+      'Dataset Engineering',
+      'Model Evaluation',
+    ],
+    caseStudy: {
+      challenge:
+        'General speech-to-text systems can struggle with very short responses such as confirmations, yes-or-no answers, and spoken numbers.',
+      built: [
+        'Browser-based audio collection',
+        'Consent and session metadata',
+        'Backend validation',
+        'Processed-audio storage',
+        'Human review workflow',
+        'Dataset export tooling',
+        'Python data loader',
+        'Audio-classification evaluation tooling',
+      ],
+      outcome:
+        'A specialised short-utterance classification approach was compared with a general Whisper speech-to-text baseline. In the limited pilot, Whisper performed best overall. Training augmentation improved the direct classifier, but it did not surpass the baseline.',
+    },
+  },
+  {
     title: 'Glaucoma Screening CNN',
     category: 'Medical AI / Computer Vision',
     description:
-      'CNN-based glaucoma screening system using deep learning and medical image analysis.',
-    tech: ['Python', 'CNN', 'Streamlit', 'Deep Learning', 'Medical AI'],
-    githubUrl: 'https://github.com/1avishek/glaucoma-screening-cnn.git',
-    liveDemoUrl:
-      'https://avishek-ananda-glaucoma-screening-cnngit.streamlit.app/',
-    accent: 'cyan',
+      'A CNN-based screening prototype using retinal images to explore deep-learning methods for glaucoma-related image classification.',
+    technologies: ['Python', 'CNN', 'Streamlit', 'Medical AI'],
+    live: 'https://avishek-ananda-glaucoma-screening-cnngit.streamlit.app/',
+    github: 'https://github.com/1avishek/glaucoma-screening-cnn',
   },
   {
     title: 'Django Chatbot',
-    category: 'Web Application / Chatbot',
+    category: 'Web Application / Conversational Interface',
     description:
-      'Django based chatbot application with backend deployment and conversational interaction.',
-    tech: ['Django', 'Python', 'Railway', 'Backend Development'],
-    githubUrl: 'https://github.com/1avishek/django-chatbot.git',
-    liveDemoUrl: 'https://web-production-3887f.up.railway.app/',
-    accent: 'violet',
+      'A deployed chatbot application combining Django backend logic with a browser-based conversational interface.',
+    technologies: ['Python', 'Django', 'Backend Development', 'Railway'],
+    live: 'https://web-production-3887f.up.railway.app/',
+    github: 'https://github.com/1avishek/django-chatbot',
   },
   {
     title: 'Knee Osteoarthritis Classification',
     category: 'Medical AI / Deep Learning',
     description:
-      'Deep learning framework for knee osteoarthritis classification using X-ray imaging and KL grading.',
-    tech: ['PyTorch', 'ResNet', 'Computer Vision', 'Medical AI'],
-    githubUrl: 'https://github.com/1avishek/Knee-Classification.git',
-    accent: 'emerald',
+      'A deep-learning project exploring the classification of knee osteoarthritis from medical X-ray images.',
+    technologies: ['Python', 'PyTorch', 'Computer Vision', 'Medical AI'],
+    github: 'https://github.com/1avishek/Knee-Classification',
   },
   {
     title: 'End-to-End Taxi Fare Prediction Pipeline',
     category: 'Data Engineering / Machine Learning',
     description:
-      'End-to-end machine learning and data engineering pipeline using SQL and PySpark.',
-    tech: ['SQL', 'PySpark', 'Machine Learning', 'Data Pipeline'],
-    githubUrl:
-      'https://github.com/1avishek/End-to-End-Taxi-Fare-Prediction-Pipeline-with-SQL-and-PySpark.git',
-    accent: 'amber',
+      'A data-processing and machine-learning pipeline for taxi fare prediction using SQL and PySpark.',
+    technologies: ['Python', 'SQL', 'PySpark', 'Data Pipelines'],
+    github:
+      'https://github.com/1avishek/End-to-End-Taxi-Fare-Prediction-Pipeline-with-SQL-and-PySpark',
   },
 ]

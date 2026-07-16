@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Optician Sans';
+  src: local('Optician Sans'), url('/fonts/optician-sans.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CodeMan38';
+  src: local('CodeMan38'), url('/fonts/codeman38.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --color-black: #050505;
+  --color-surface-dark: #171717;
+  --color-white: #ffffff;
+  --color-off-white: #f5f4ef;
+  --color-grey: #707070;
+  --color-border: #c7c7c7;
+  --color-accent: #63e6c5;
+  --color-header: #a7a7a7;
+  --font-display: 'Optician Sans', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --font-body: 'Abel', 'Helvetica Neue', Arial, sans-serif;
+  --font-accent: 'CodeMan38', 'Courier New', monospace;
+  --container: 82rem;
+  --header-height: 4.75rem;
+}
