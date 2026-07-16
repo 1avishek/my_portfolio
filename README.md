@@ -1,65 +1,33 @@
-# AVISHEK KURI ANANDA Portfolio
+# Avishek Kuri Ananda — Portfolio
 
-Modern AI-focused portfolio built with React, Vite, TypeScript, Tailwind CSS, Motion, and Three.js.
+Minimal single-page portfolio built with React, Vite, TypeScript, and ordinary CSS.
 
-## Features
+Live site: [avishekananda.is-a.dev](https://avishekananda.is-a.dev/)
 
-- Responsive cinematic portfolio layout
-- Light and dark theme with localStorage persistence
-- Project showcase with live demo and GitHub links
-- Contact form prepared for Formspree
-- Direct contact links for GitHub, LinkedIn, Instagram, and email
-- Lightweight 3D contact robot using React Three Fiber
-- GitHub Pages deployment workflow
+## Update the content
 
-## Contact Form Setup
+- Personal information and social links: `src/data/site.ts`
+- Projects: `src/data/projects.ts`
+- Skills: `src/data/skills.ts`
+- Homepage portrait: `src/assets/home-profile.webp` or `src/assets/home-profile.jpg`
+- Header avatar and browser icon: add `src/assets/avatar.png`
+- Journey artwork: add an image whose filename contains both `bangladesh` and `finland` to `src/assets/`
+- Optician Sans: add `public/fonts/optician-sans.woff2`
+- CodeMan38: add `public/fonts/codeman38.woff2`
 
-The contact form uses `@formspree/react`.
+Missing images use neutral CSS/SVG placeholders, so the project still builds. The avatar is used as the favicon automatically when present.
 
-In `src/components/Contact.tsx`, replace:
+Only add project demo or repository URLs after they are publicly reachable; omitted URLs render as unavailable instead of creating broken links.
 
-```ts
-const formId = 'YOUR_FORM_ID'
-```
-
-with the real Formspree form ID from your Formspree dashboard. Configure that Formspree form to forward messages to:
-
-```txt
-avishekkuriananda@gmail.com
-```
-
-## Local Development
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production Build
+## Production build
 
 ```bash
 npm run build
-```
-
-## Deployment
-
-This project includes `.github/workflows/deploy.yml` for GitHub Pages.
-
-After pushing to GitHub:
-
-1. Open the repository settings.
-2. Go to `Pages`.
-3. Set source to `GitHub Actions`.
-4. Run or wait for the deploy workflow.
-
-Planned custom portfolio domain:
-
-```txt
-https://avishekananda.is-a.dev/
-```
-
-Until the `is-a.dev` pull request is merged and the custom domain is enabled in GitHub Pages, use:
-
-```txt
-https://1avishek.github.io/my_portfolio/
 ```

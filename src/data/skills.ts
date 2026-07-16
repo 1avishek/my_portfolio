@@ -1,57 +1,65 @@
-export type SkillCategory = {
+export type SkillGroup = {
   title: string
-  icon: 'core' | 'ai' | 'applied' | 'research'
-  summary: string
   skills: string[]
 }
 
-export const skillCategories: SkillCategory[] = [
+export const skillGroups: SkillGroup[] = [
   {
-    title: 'Core Technical Stack',
-    icon: 'core',
-    summary: 'Practical tools for data work, project infrastructure, and reproducible builds.',
-    skills: ['Python', 'SQL', 'Git', 'Docker', 'SQLite', 'PostgreSQL', 'PySpark'],
-  },
-  {
-    title: 'AI / ML',
-    icon: 'ai',
-    summary: 'Practical machine learning, deep learning, and computer vision tooling.',
+    title: 'AI & Machine Learning',
     skills: [
       'Machine Learning',
       'Deep Learning',
-      'Computer Vision',
       'PyTorch',
-      'OpenCV',
       'scikit-learn',
+      'Computer Vision',
+      'OpenCV',
+      'Speech & Audio Processing',
+      'Audio Classification',
+      'Model Evaluation',
+    ],
+  },
+  {
+    title: 'Backend, APIs & Data',
+    skills: [
+      'Python',
+      'FastAPI',
+      'Django',
+      'REST API Design',
+      'Pydantic',
+      'Uvicorn',
+      'SQL',
+      'PostgreSQL',
+      'SQLite',
+      'SQLAlchemy',
+      'Database Design',
+      'Authentication & Authorization',
+      'File Upload Workflows',
+      'PySpark',
       'Pandas',
       'NumPy',
     ],
   },
   {
-    title: 'Applied Development',
-    icon: 'applied',
-    summary: 'Interfaces, backends, demos, and deployable AI applications.',
-    skills: ['Django', 'FastAPI', 'Streamlit', 'Backend systems', 'Interactive interfaces'],
-  },
-  {
-    title: 'Research Focus',
-    icon: 'research',
-    summary: 'Research-oriented habits for applied and healthcare-adjacent AI.',
+    title: 'Systems, Evaluation & Delivery',
     skills: [
-      'Medical AI',
-      'Audio Classification',
-      'Speech Processing',
-      'Data Analysis',
-      'Model Evaluation',
+      'System Design Fundamentals',
+      'API Architecture',
+      'Service & Repository Patterns',
+      'Environment Configuration',
+      'Docker',
+      'Nginx & Reverse Proxy',
+      'HTTPS & Request Routing',
+      'Deployment Workflows',
+      'Logging & Error Handling',
+      'Monitoring Fundamentals',
+      'API Testing',
+      'Data Collection',
+      'Data Validation',
+      'Dataset Preparation',
+      'Experiment Design',
+      'Baseline Comparison',
+      'Technical Documentation',
+      'MCP Integration Concepts',
     ],
   },
-]
-
-export const stackHighlights = [
-  'Research-aware product thinking',
-  'Interactive technical storytelling',
-  'Medical and speech AI exploration',
-  'Practical model evaluation',
-  'Backend and frontend experimentation',
-  'Data pipeline fundamentals',
 ]

@@ -1,38 +1,27 @@
-import { MotionConfig } from 'motion/react'
-import About from './components/About'
-import Contact from './components/Contact'
-import CurrentFocus from './components/CurrentFocus'
+import Header from './components/Header'
 import Footer from './components/Footer'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import ScrollJourneyCar from './components/ScrollJourneyCar'
-import Skills from './components/Skills'
-import { useMouseGlow } from './hooks/useMouseGlow'
+import About from './sections/About'
+import Contact from './sections/Contact'
+import Hero from './sections/Hero'
+import Projects from './sections/Projects'
+import Skills from './sections/Skills'
 
 function App() {
-  useMouseGlow()
-
   return (
-    <MotionConfig reducedMotion="user">
-      <div className="site-root">
-        <a href="#home" className="skip-link">
-          Skip to content
-        </a>
-        <div className="cursor-glow" aria-hidden="true" />
-        <ScrollJourneyCar />
-        <Navbar />
-        <main className="content-layer">
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <CurrentFocus />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </MotionConfig>
+    <>
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+      <Header />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   )
 }
 
