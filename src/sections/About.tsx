@@ -39,7 +39,7 @@ function About() {
 
             <div className="about-copy">
               <p>
-              I’m from Bangladesh and now based in Finland, where I graduated in Data Engineering from Satakunta University of Applied Sciences (SAMK).
+              I’m from Bangladesh and now based in Finland, where I graduated with a Bachelor of Engineering from the Artificial Intelligence (Data Engineering) programme at Satakunta University of Applied Sciences (SAMK).
               Moving between these two places has shaped how I approach both learning and problem-solving: stay curious, adapt quickly, and build things that are useful beyond the classroom.
               </p>
               <p>
