@@ -307,12 +307,13 @@
 
   .analytics-consent {
     bottom: 0.5rem;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    left: 0.5rem;
+    width: min(calc(100% - 1rem), 22rem);
   }
 
-  .analytics-consent__actions,
-  .analytics-consent__actions button {
+  .analytics-consent__actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
   }
 }

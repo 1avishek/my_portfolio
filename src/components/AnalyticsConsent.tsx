@@ -94,12 +94,11 @@ function AnalyticsConsent() {
   return (
     <aside className="analytics-consent" aria-labelledby="analytics-consent-title">
       <div>
-        <h2 id="analytics-consent-title">Optional analytics</h2>
+        <h2 id="analytics-consent-title">Analytics</h2>
         <p>
-          With your permission, Google Analytics will collect usage data to help improve this
-          portfolio. It stays off unless you accept.{' '}
+          Allow Google Analytics to collect usage data? Nothing is tracked unless you accept.{' '}
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-            Google privacy
+            Privacy
           </a>
           .
         </p>
