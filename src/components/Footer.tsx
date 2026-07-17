@@ -8,8 +8,6 @@ function Footer() {
       <div className="footer-inner">
         <div>
           <strong>{site.name.toUpperCase()}</strong>
-          {/* <p>{site.footerEducation}</p>
-          <p>{site.location}</p> */}
           <div className="footer-meta">
             <p>{site.shortAvailability}</p>
             <AnalyticsConsent />

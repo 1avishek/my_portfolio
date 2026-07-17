@@ -30,7 +30,6 @@ function Hero() {
         </h1>
         <div className="hero-summary">
           <p>{site.headline}</p>
-          {/* <p>{site.educationLine}</p> */}
           <p>{site.availability}</p>
         </div>
         <a className="hero-cta" href="#contact">
