@@ -304,6 +304,17 @@
   .footer-inner > .scroll-top {
     grid-area: top;
   }
+
+  .analytics-consent {
+    bottom: 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .analytics-consent__actions,
+  .analytics-consent__actions button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 40rem) and (max-height: 46rem) {

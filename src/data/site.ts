@@ -26,6 +26,7 @@ export const site = {
   shortAvailability: 'Open to professional opportunities.',
   footerEducation: 'Artificial Intelligence graduate from SAMK',
   email: 'avishekkuriananda@gmail.com',
+  googleAnalyticsId: 'G-BMN58BKD61',
   location: 'Bangladesh → Finland',
   links: {
     github: 'https://github.com/1avishek',
