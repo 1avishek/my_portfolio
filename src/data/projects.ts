@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: 'Finnish Short-Utterance Data Collection and Recognition Pipeline',
     category: 'Speech AI / Audio Classification / Applied Research',
     supportingLine:
-      'Completed as my Bachelor’s thesis in Artificial Intelligence at Satakunta University of Applied Sciences (SAMK).',
+      'Completed as my Bachelor’s thesis in Data Engineering at Satakunta University of Applied Sciences (SAMK).',
     description:
       'A speech-AI pipeline for collecting, validating, exporting, loading, and evaluating very short Finnish spoken responses.',
     status: 'Bachelor’s thesis · Case study · No public demo',
