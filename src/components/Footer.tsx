@@ -1,4 +1,5 @@
 import { site } from '../data/site'
+import AnalyticsConsent from './AnalyticsConsent'
 import SocialLinks from './SocialLinks'
 
 function Footer() {
@@ -9,7 +10,10 @@ function Footer() {
           <strong>{site.name.toUpperCase()}</strong>
           {/* <p>{site.footerEducation}</p>
           <p>{site.location}</p> */}
-          <p>{site.shortAvailability}</p>
+          <div className="footer-meta">
+            <p>{site.shortAvailability}</p>
+            <AnalyticsConsent />
+          </div>
         </div>
         <SocialLinks includeInstagram />
         <p>© {new Date().getFullYear()}</p>
