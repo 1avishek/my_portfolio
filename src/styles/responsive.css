@@ -308,7 +308,7 @@
   .analytics-consent {
     bottom: 0.5rem;
     left: 0.5rem;
-    width: min(calc(100% - 1rem), 22rem);
+    width: min(calc(100% - 1rem), 16rem);
   }
 
   .analytics-consent__actions {
