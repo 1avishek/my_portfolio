@@ -96,7 +96,7 @@ function AnalyticsConsent() {
       <div>
         <h2 id="analytics-consent-title">Analytics</h2>
         <p>
-          Allow Google Analytics to collect usage data? Nothing is tracked unless you accept.{' '}
+          Optional analytics. Nothing loads before you accept.{' '}
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
             Privacy
           </a>
