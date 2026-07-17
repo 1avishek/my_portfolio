@@ -127,6 +127,12 @@ main > section {
   text-transform: uppercase;
 }
 
+@media (min-width: 56.01rem) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
