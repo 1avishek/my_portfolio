@@ -62,7 +62,6 @@ export const projects: Project[] = [
     description:
       'A deployed chatbot application combining Django backend logic with a browser-based conversational interface.',
     technologies: ['Python', 'Django', 'Backend Development', 'Railway'],
-    live: 'https://web-production-3887f.up.railway.app/',
     github: 'https://github.com/1avishek/django-chatbot',
   },
   {
@@ -81,5 +80,21 @@ export const projects: Project[] = [
     technologies: ['Python', 'SQL', 'PySpark', 'Data Pipelines'],
     github:
       'https://github.com/1avishek/End-to-End-Taxi-Fare-Prediction-Pipeline-with-SQL-and-PySpark',
+  },
+  {
+    title: 'Student Advisor Reinforcement Learning',
+    category: 'Reinforcement Learning / Recommendation Systems',
+    description:
+      'A Python experiment using tabular Q-learning, simulated student and university profiles, epsilon-greedy exploration, and rule-based reward shaping for academic recommendations.',
+    technologies: ['Python', 'Q-Learning', 'NumPy', 'Reinforcement Learning', 'Reward Shaping'],
+    github: 'https://github.com/1avishek/student-advisor-rl',
+  },
+  {
+    title: 'Sherlock Holmes Semantic Search',
+    category: 'Natural Language Processing / Vector Search',
+    description:
+      'An NLP project that cleans and chunks a Sherlock Holmes text corpus, creates sentence-transformer embeddings, stores them in ChromaDB, and retrieves semantically similar passages.',
+    technologies: ['Python', 'LangChain', 'Sentence Transformers', 'ChromaDB', 'Semantic Search'],
+    github: 'https://github.com/1avishek/sherlock-holmes-nlp',
   },
 ]
