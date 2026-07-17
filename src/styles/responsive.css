@@ -306,15 +306,22 @@
   }
 
   .analytics-consent {
-    bottom: 0.5rem;
-    left: 0.5rem;
-    width: min(calc(100% - 1rem), 16rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.5rem;
+    padding: 0.5rem 0.625rem;
+  }
+
+  .analytics-consent > div:first-child {
+    display: block;
+  }
+
+  .analytics-consent h2 {
+    margin-bottom: 0.1rem;
   }
 
   .analytics-consent__actions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
+    display: flex;
   }
 }
 
