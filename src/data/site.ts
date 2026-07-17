@@ -1,14 +1,6 @@
-const assetModules = import.meta.glob('../assets/*.{avif,jpeg,jpg,png,svg,webp}', {
-  eager: true,
-  import: 'default',
-  query: '?url',
-}) as Record<string, string>
-
-const findAsset = (name: string) => assetModules[`../assets/${name}`]
-const journeyAsset = Object.entries(assetModules).find(([path]) => {
-  const name = path.toLowerCase()
-  return name.includes('bangladesh') && name.includes('finland')
-})?.[1]
+import avatar from '../assets/avatar.webp'
+import homeProfile from '../assets/home-profile.jpg'
+import journey from '../assets/bangladesh-finland-story.webp'
 
 export const site = {
   name: 'Avishek Kuri Ananda',
@@ -34,7 +26,7 @@ export const navigation = [
 ] as const
 
 export const media = {
-  avatar: findAsset('avatar.png'),
-  homeProfile: findAsset('home-profile.webp') ?? findAsset('home-profile.jpg'),
-  journey: journeyAsset,
+  avatar,
+  homeProfile,
+  journey,
 }
