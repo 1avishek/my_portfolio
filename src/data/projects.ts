@@ -4,7 +4,6 @@ export type Project = {
   description: string
   supportingLine?: string
   featuredLabel?: string
-  publicationNote?: string
   publicationUrl?: string
   publicationLabel?: string
   publicationAriaLabel?: string
@@ -28,7 +27,6 @@ export const projects: Project[] = [
       'Completed as my Bachelor’s thesis in the Bachelor of Engineering programme in Artificial Intelligence (Data Engineering) at Satakunta University of Applied Sciences (SAMK).',
     description:
       'A speech-AI pipeline for collecting, validating, exporting, loading, and evaluating very short Finnish spoken responses.',
-    publicationNote: 'The completed thesis is publicly available through the Theseus open repository.',
     publicationUrl: 'https://urn.fi/URN:NBN:fi:amk-2026071425874',
     publicationLabel: 'Read published thesis',
     publicationAriaLabel: 'Read the published Bachelor’s thesis by Avishek Kuri Ananda in Theseus',
