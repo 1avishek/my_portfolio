@@ -3,6 +3,11 @@ export type Project = {
   category: string
   description: string
   supportingLine?: string
+  featuredLabel?: string
+  publicationNote?: string
+  publicationUrl?: string
+  publicationLabel?: string
+  publicationAriaLabel?: string
   status?: string
   technologies: string[]
   github?: string
@@ -18,11 +23,16 @@ export const projects: Project[] = [
   {
     title: 'Finnish Short-Utterance Data Collection and Recognition Pipeline',
     category: 'Speech AI / Audio Classification / Applied Research',
+    featuredLabel: 'Bachelor’s thesis · Published in Theseus',
     supportingLine:
-      'Completed as my Bachelor’s thesis for the Bachelor of Engineering programme in Artificial Intelligence (Data Engineering) at Satakunta University of Applied Sciences (SAMK).',
+      'Completed as my Bachelor’s thesis in the Bachelor of Engineering programme in Artificial Intelligence (Data Engineering) at Satakunta University of Applied Sciences (SAMK).',
     description:
       'A speech-AI pipeline for collecting, validating, exporting, loading, and evaluating very short Finnish spoken responses.',
-    status: 'Bachelor’s thesis · Case study · No public demo',
+    publicationNote: 'The completed thesis is publicly available through the Theseus open repository.',
+    publicationUrl: 'https://urn.fi/URN:NBN:fi:amk-2026071425874',
+    publicationLabel: 'Read published thesis',
+    publicationAriaLabel: 'Read the published Bachelor’s thesis by Avishek Kuri Ananda in Theseus',
+    status: 'No public application demo',
     technologies: [
       'Python',
       'Speech Processing',
