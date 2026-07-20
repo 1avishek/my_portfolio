@@ -4,6 +4,10 @@ Minimal single-page portfolio built with React, Vite, TypeScript, and ordinary C
 
 Live site: [avishekananda.is-a.dev](https://avishekananda.is-a.dev/)
 
+## Learning Documentation
+
+[Read the complete portfolio learning guide](docs/PORTFOLIO_LEARNING_GUIDE.md)
+
 ## Update the content
 
 - Personal information and social links: `src/data/site.ts`

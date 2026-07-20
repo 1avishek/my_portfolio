@@ -5,10 +5,20 @@ type ProjectRowProps = {
 }
 
 function ProjectActions({ project }: ProjectRowProps) {
-  if (!project.live && !project.github) return null
+  if (!project.publicationUrl && !project.live && !project.github) return null
 
   return (
     <div className="project-links" aria-label={`${project.title} links`}>
+      {project.publicationUrl ? (
+        <a
+          href={project.publicationUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={project.publicationAriaLabel}
+        >
+          {project.publicationLabel} <span aria-hidden="true">↗</span>
+        </a>
+      ) : null}
       {project.live ? (
         <a href={project.live} target="_blank" rel="noopener noreferrer">
           Live demo <span aria-hidden="true">↗</span>
@@ -39,7 +49,7 @@ function FeaturedCaseStudy({ project }: ProjectRowProps) {
 
   return (
     <div className="project-copy project-copy--featured">
-      <p className="featured-label">Bachelor’s thesis · Featured case study</p>
+      <p className="featured-label">{project.featuredLabel}</p>
       <h3>
         Finnish Short-Utterance Data
         <br />
@@ -48,6 +58,7 @@ function FeaturedCaseStudy({ project }: ProjectRowProps) {
       <p className="project-category">{project.category}</p>
       <p className="project-support">{project.supportingLine}</p>
       <p className="project-intro">{project.description}</p>
+      <p className="project-support">{project.publicationNote}</p>
 
       <div className="case-study-details">
         <section>
@@ -69,6 +80,7 @@ function FeaturedCaseStudy({ project }: ProjectRowProps) {
       </div>
 
       <TechnologyLabels project={project} />
+      <ProjectActions project={project} />
       <p className="project-status">{project.status}</p>
     </div>
   )
