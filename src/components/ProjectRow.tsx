@@ -58,7 +58,6 @@ function FeaturedCaseStudy({ project }: ProjectRowProps) {
       <p className="project-category">{project.category}</p>
       <p className="project-support">{project.supportingLine}</p>
       <p className="project-intro">{project.description}</p>
-      <p className="project-support">{project.publicationNote}</p>
 
       <div className="case-study-details">
         <section>
